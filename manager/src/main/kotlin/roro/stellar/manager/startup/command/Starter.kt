@@ -18,7 +18,7 @@ object Starter {
             val dropPrivileges = StellarSettings.getPreferences()
                 .getBoolean(StellarSettings.DROP_PRIVILEGES, false)
             return if (dropPrivileges) {
-                "${Chid.path} 2000 $baseCommand"
+                "${Chid.path} 2000,2000,1004,1007,1011,1015,1028,1078,1079,3001,3002,3003,3006,3009,3011,3012 $baseCommand"
             } else {
                 baseCommand
             }

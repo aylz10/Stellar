@@ -68,7 +68,7 @@ static void extract_uidgids(const char *uidgids, uid_t *uid, gid_t *gid,
 
 int main(int argc, char **argv) {
     uid_t uid, myuid;
-    gid_t gid, gids[10];
+    gid_t gid, gids[32];
     myuid = getuid();
     if (myuid != 0 && myuid != 2000) {
         perrorf("chid: uid %d 不允许调用 chid\n", myuid);
